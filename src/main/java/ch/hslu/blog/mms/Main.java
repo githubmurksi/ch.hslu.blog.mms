@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         ProductCalculator product = new ProductCalculator();
-        int result = product.calc(new int[] { 3, 2 });
+        int result = product.calc(new int[] { 3, 2, 6 });
         System.out.println(result);
     }
 

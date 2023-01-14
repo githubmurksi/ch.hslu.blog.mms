@@ -1,6 +1,6 @@
 package ch.hslu.blog.mms;
 
-public class ProductCalculator {
+public class ProductCalculatorFixed {
 
     /**
      * Berechne das Produkt
@@ -14,12 +14,12 @@ public class ProductCalculator {
 
         int result = 1;
         for (int x : values) {
-            result *= x;
+            // Mit der Math-Biliothek wird eine Exception geschmissen, falls ein Overflow auftritt
+            result = Math.multiplyExact(result, x);
         }
         return result;
     }
 }
-
 
 
 
